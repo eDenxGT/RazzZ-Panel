@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Light Mode */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #b9ff66;
+  --secondary: #7a5cfa;
+  --accent: #ff2e63;
+  --muted: #f3f4f6;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #f1f5f9;
+
+    --primary: #b9ff66;
+    --secondary: #7a5cfa;
+    --accent: #ff2e63;
+    --muted: #1e1e2f;
+  }
+}
+
+/* Tailwind Design Tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+
+  --font-body: var(--font-manrope);
+  --font-title: var(--font-germania);
+}
+
+/* Global Styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Components */
+.btn-primary {
+  @apply bg-primary text-foreground px-4 py-2 rounded-md font-semibold hover:opacity-90 transition;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white px-4 py-2 rounded-md font-semibold hover:opacity-90 transition;
+}
+
+.card {
+  @apply bg-muted p-6 rounded-lg shadow-md;
+}

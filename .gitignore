@@ -1,0 +1,121 @@
+# =========================
+# Dependencies
+# =========================
+node_modules
+/.pnp
+.pnp.*
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# =========================
+# Build Outputs
+# =========================
+.next
+/out/
+/build
+dist
+
+# =========================
+# Environment & Configuration
+# =========================
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Logs & Debug
+# =========================
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# =========================
+# Testing & Coverage
+# =========================
+/coverage
+/.nyc_output
+
+# =========================
+# IDEs and Editors
+# =========================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Cloud9
+.c9/
+
+# Sublime Text
+*.sublime-workspace
+
+# =========================
+# System Files
+# =========================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# Project Specific
+# =========================
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Temporary files
+.temp/
+.tmp/
+
+# Security
+*.pem
+*.key
+*.crt
+*.cert
